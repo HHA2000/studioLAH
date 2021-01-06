@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio LAH</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo/LAH ww.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/LAH KL.png">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="animate.min.css">
@@ -336,6 +336,34 @@
     <div class="footer bg-dark ">
       <p class="mb-0">&copy; 2021</p>
     </div>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="509244629410801"
+      theme_color="#ff0000"
+      logged_in_greeting="မင်္ဂလာပါ Studio LAH Live Chat မှကြိုဆိုပါတယ်"
+      logged_out_greeting="မင်္ဂလာပါ Studio LAH Live Chat မှကြိုဆိုပါတယ်">
+    </div>
+
 
     <script src="bootstrap.min.js"></script>
     <script src="wow.min.js"></script>
